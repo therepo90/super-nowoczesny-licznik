@@ -1,0 +1,49 @@
+<html>
+<body>
+<head>
+    <title>Super nowoczesny licznik</title>
+    <style>
+        .container {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            margin: 5%;
+            height: 100%;
+            align-items: center;
+        }
+        button,input {
+            font-size: 78px;
+            font-weight: bold;
+        }
+
+        button,input {
+            display: inline-block;
+            height: 300px;
+            width: 300px;
+            text-align: center;
+        }
+
+    </style>
+    <script>
+        function onSubtract() {
+            document.querySelector('#input').value--;
+        }
+
+        function onAdd() {
+            document.querySelector('#input').value++;
+        }
+
+    </script>
+</head>
+
+</body>
+<div class="container">
+    <button onclick="onSubtract();">
+        -
+    </button>
+    <input type="text" id="input" value="0">
+    <button onclick="onAdd();">
+        +
+    </button>
+</div>
+</html>
